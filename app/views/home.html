@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../bower_components/angular-bootstrap/ui-bootstrap.min.jsss"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Welcome to Phoshoko online library</h3>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Category</a>
+                    </li>
+                    <li>
+                        <a href="#">Submenu 1-2</a>
+                    </li>
+                    <li>
+                        <a href="#">Submenu 1-3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Create book
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Create book</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sell book
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Sell book on phoshoko's library</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="search-container">
+            <form ng-submit="searchButton(searchData)">
+              <input type="text" placeholder="Search.." name="search" ng-model="searchData">
+              <button type="submit" onclick="">Submit</button>
+            </form>
+   </div>
+
+   <div class="btn-group">
+        <button type="button" class="btn btn-primary">Sony</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Tablet</a></li>
+          <li><a href="#">Smartphone</a></li>
+        </ul>
+      </div>
+      
+
+</body>
+
+</html>
